@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Travel Website Application" />
+  <meta name="author" content="Subin T S" />
+
+  <title>Home - Travler</title>
+
+  <!-- Favicon Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <!-- Fontawesome CDN Link -->
+  <script src="https://kit.fontawesome.com/bb121f03f5.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg py-4  fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">Travler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 gap-lg-5 fw-semibold ">
+            <li class="nav-item">
+              <a class="nav-link active-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destination.html">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border border-secondary rounded-2 d-inline-block py-2 px-3">Sign Up</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- Header section ends -->
+
+  <!-- Main section -->
+  <main>
+
+    <!-- Hero section starts -->
+    <section id="hero-section">
+      <div class="container py-3">
+        <div class="row">
+          <!-- Hero left side -->
+          <div class="col-12 col-md-12 col-lg-6 pt-2 mb-5 pt-lg-5 mb-lg-0 order-2 order-lg-1">
+            <p class="hero-subtitle fw-bold fs-4 mb-4">Best Destinations around the world
+            </p>
+            <h2 class="display-1 fw-semibold mb-3">Travel, <span class="underline-style">enjoy</span> <br> and live a
+              new <br> and full life</h2>
+            <p class="mb-4">Discover breathtaking destinations, plan unforgettable journeys, and explore the world with
+              ease. Your next adventure starts here.</p>
+
+            <!-- Hero left side Button container  -->
+            <div class="btn-container">
+              <a href="destination.html" class="find-more-btn">Find out more</a>
+              <div>
+                <a href="contact.html" class="booking-arrow-btn">
+                  <span class="arrow">&gt; </span>
+                  <span class="hidden-btn-text">Book
+                    Now</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero right side -->
+          <div class="col-12 col-md-12 col-lg-6 py-4 py-lg-0 order-1 order-lg-2">
+            <!-- Hero image -->
+            <div class="hero-image">
+              <img src="./images/hero-img.png" alt="Hero Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero sectio ends -->
+
+    <!-- Subscribe section -->
+    <section class="py-5">
+      <div class="container  shadow-md subscribe-container ">
+        <!-- paper plane icon for Email -->
+        <div class="paper-plane-icon">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <div class="row p-5">
+
+
+          <p class="text-center fs-2 fw-bold mb-4">Subscribe to get information, latest news and other interesting
+            offers about Cobham</p>
+          <!-- subscription form -->
+          <form class="d-flex flex-wrap gap-3 justify-content-center py-4">
+
+            <input type="email" class="email-input" placeholder="Enter email" required>
+
+            <input type="submit" value="Submit" class="subscription-btn">
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe section -->
+  </main>
+  <!-- Main section ends -->
+
+  <!-- Footer section -->
+  <footer>
+    <div class="container pt-5">
+      <div class="row gx-0 gx-lg-4">
+
+        <div class="col-12 col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <h2 class="fs-3 mb-3">Travler.</h2>
+          <p>Book your trip in minute, get full Control for much longer.</p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-8">
+          <!-- Footer link section -->
+          <div class="row gy-5 gy-lg-0">
+            <div class="col-6 col-md-4 col-lg-3">
+              <h3 class="fs-4 fw-bold  mb-3">Company</h3>
+              <ul class="list-unstyled footer-list">
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">About</a></li>
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Careers</a></li>
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Mobile</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <h3 class="fs-4 fw-bold  mb-3">Contact</h3>
+              <ul class="list-unstyled footer-list">
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Help/FAQ</a></li>
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Press</a></li>
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <h3 class="fs-4 fw-bold  mb-3">More</h3>
+              <ul class="list-unstyled footer-list">
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Airlinefees</a></li>
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Airline</a></li>
+                <li class="mb-2"><a class="text-decoration-none fw-semibold " href="#">Low fare tips</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-12 col-lg-3 text-center text-md-start">
+
+              <div class="social-links mb-4 ">
+                <a class="text-decoration-none  shadow" href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="text-decoration-none  shadow" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="text-decoration-none shadow" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <p class="fs-5 text-center text-lg-start">Discover Our App</p>
+              <!-- google play store link with image -->
+              <div class="d-flex justify-content-center justify-content-lg-start aling-items-center gap-2 gap-lg-4">
+                <a href="#" class="text-decoration-none">
+                  <img src="images/google-play-image.webp" alt="Google Play Store Logo Picture" class="img-fluid "
+                    width="80">
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <img src="images/apple-store-img.png" alt="Apple Store Logo Picture" class="img-fluid " width="80">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <p class="pt-5 mb-0 text-center">
+        &copy; Travler 2026. Al Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- Footer section ends -->
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold" id="loginModalLabel">Login </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required minlength="8"
+                maxlength="16">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn modal-submit-btn">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Signup Modal ends -->
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
