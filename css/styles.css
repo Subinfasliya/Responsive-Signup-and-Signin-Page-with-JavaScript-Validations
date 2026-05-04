@@ -418,6 +418,49 @@ h6 {
 .form-container input[type="submit"]:hover {
   background-color: #b24029;
 }
+
+/* ----------- Dashboard Page ------------- */
+
+.dashboard-section{
+  background: url("../images/dashboard-image1.jpg");
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
+}
+
+/* ----------- Dashboard Page ends ------------- */
+
+/* ------------ Register page -------------- */
+
+
+
+.signup-form-container{
+  width: 600px;
+  max-width: 100%;
+  border: 1px solid rgb(174, 151, 3);
+  margin: 20px auto;
+  border-radius: 10px;
+  padding:30px;
+}
+
+.invalid-message{
+  display: none;
+}
+
+.toggle-btn{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+   border: none;
+  background: transparent;
+  padding: 0;
+  
+}
+/* ------------ Register page ends -------------- */
+
+
+
 /* ------------- Footer --------------------- */
 
 footer {
@@ -474,35 +517,7 @@ footer {
   background-color: #1d9bf0;
   color: #fff;
 }
-/* ---------------  Login Modal ----------------- */
-
-.modal-content {
-  background-color: #fff;
-  color: #212832;
-  padding: 20px;
-}
-
-.modal-header {
-  border: none;
-}
-.btn-close {
-  color: #fff;
-}
-.modal-footer {
-  justify-content: center;
-  border: none;
-}
-
-.modal-submit-btn {
-  background-color: #d0624c;
-  color: #fff;
-  font-weight: 600;
-}
-.modal-submit-btn:hover {
-  background-color: #df6951;
-  color: #fff;
-}
-
+/* ---------------------------------------- */
 /* Custom Media Query */
 @media (max-width: 991.98px) {
   .navbar {

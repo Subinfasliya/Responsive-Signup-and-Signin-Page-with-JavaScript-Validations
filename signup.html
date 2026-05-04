@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Travel Website Application" />
+  <meta name="author" content="Subin T S" />
+
+  <title>Home - Travler</title>
+
+  <!-- Favicon Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <!-- Fontawesome CDN Link -->
+  <script src="https://kit.fontawesome.com/bb121f03f5.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg py-4  fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">Travler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 gap-lg-5 fw-semibold ">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border border-secondary rounded-2 d-inline-block py-2 px-3">Sign Up</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- Header section ends -->
+
+  <!-- Main section -->
+  <main class="register-container">
+    <div class="container  py-5  ">
+      <h2 class="fw-bold text-center pt-5">Register</h2>
+      <form class="signup-form-container" id="signupForm">
+        <!-- Input field for username -->
+        <div class="input-groups mb-4">
+          <label for="fname" class="fw-bold mb-2">Full Name <span class="text-danger">*</span></label>
+          <input type="text" id="fname" class="form-control" placeholder="John" minlength="3" maxlength="30" required>
+          <p class="text-danger invalid-message" id="nameError">Name must be atleast 3 characters * </p>
+        </div>
+        <!-- Input field for  -->
+        <div class="input-groups mb-4">
+          <label for="email" class="fw-bold mb-2">Email <span class="text-danger">*</span></label>
+          <input type="email" id="email" class="form-control" placeholder="example@mail.com" required>
+          <p class="text-danger invalid-message" id="emailError"></p>
+        </div>
+        <!-- tel field for user phone number -->
+        <div class="input-groups mb-4">
+          <label for="phone" class="fw-bold mb-2">Phone Number <span class="text-danger">*</span></label>
+          <input type="tel" id="phone" class="form-control" placeholder="eg:- 7990423564" required
+            pattern="[6-9][0-9]{9}">
+          <p class="text-danger invalid-message" id="phoneError"></p>
+        </div>
+        <!-- input field for user City  -->
+        <div class="input-groups mb-4">
+          <label for="city" class="fw-bold mb-2">City <span class="text-danger">*</span></label>
+          <input type="text" id="city" class="form-control" placeholder="KOCHI" required>
+          <p class="text-danger invalid-message" id="cityError"></p>
+        </div>
+        <!-- input field for user Password -->
+        <div class="input-groups position-relative mb-4 ">
+          <label for="password" class="fw-bold mb-2">Password <span class="text-danger">*</span></label>
+          
+            <input type="password" id="password" class="form-control" required minlength="8">
+            <button type="button" id="togglePassword" class="toggle-btn"><i class="fa-solid fa-eye-slash mb-0"></i></button>
+         
+
+          <p class="text-danger invalid-message" id="passwordError"></p>
+
+        </div>
+        <!-- input field for Confirm password -->
+        <div class="input-groups position-relative  mb-4">
+          <label for="confirmPassword" class="fw-bold mb-2">Confirm Password <span class="text-danger">*</span></label>
+          <input type="password" id="confirmPassword" class="form-control" required minlength="8">
+           <button type="button" id="toggleConfirmPassword" class="toggle-btn"><i class="fa-solid fa-eye-slash mb-0"></i></button>
+          <p class="text-danger invalid-message" id="confirmPasswordError"></p>
+        </div>
+
+        <button class="btn btn-success w-100">Register</button>
+      </form>
+    </div>
+  </main>
+  <!-- Main section ends -->
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="js/signup.js"></script>
+</body>
+
+</html>
