@@ -7,7 +7,7 @@
   <meta name="description" content="Travel Website Application" />
   <meta name="author" content="Subin T S" />
 
-  <title>Home - Travler</title>
+  <title>Register</title>
 
   <!-- Favicon Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -31,7 +31,7 @@
   <header>
     <nav class="navbar navbar-expand-lg py-4  fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="index.html">Travler</a>
+        <a class="navbar-brand fw-bold fs-3" href="home.html">Travler</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,10 +40,11 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 gap-lg-5 fw-semibold ">
 
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+              <a class="nav-link" href="signin.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link border border-secondary rounded-2 d-inline-block py-2 px-3">Sign Up</a>
+              <a class="nav-link border border-secondary rounded-2 d-inline-block py-2 px-3" href="signup.html">Sign
+                Up</a>
             </li>
 
           </ul>
@@ -88,10 +89,11 @@
         <!-- input field for user Password -->
         <div class="input-groups position-relative mb-4 ">
           <label for="password" class="fw-bold mb-2">Password <span class="text-danger">*</span></label>
-          
-            <input type="password" id="password" class="form-control" required minlength="8">
-            <button type="button" id="togglePassword" class="toggle-btn"><i class="fa-solid fa-eye-slash mb-0"></i></button>
-         
+
+          <input type="password" id="password" class="form-control" required minlength="8">
+          <button type="button" id="togglePassword" class="toggle-btn"><i
+              class="fa-solid fa-eye-slash mb-0"></i></button>
+
 
           <p class="text-danger invalid-message" id="passwordError"></p>
 
@@ -100,12 +102,15 @@
         <div class="input-groups position-relative  mb-4">
           <label for="confirmPassword" class="fw-bold mb-2">Confirm Password <span class="text-danger">*</span></label>
           <input type="password" id="confirmPassword" class="form-control" required minlength="8">
-           <button type="button" id="toggleConfirmPassword" class="toggle-btn"><i class="fa-solid fa-eye-slash mb-0"></i></button>
+          <button type="button" id="toggleConfirmPassword" class="toggle-btn"><i
+              class="fa-solid fa-eye-slash mb-0"></i></button>
           <p class="text-danger invalid-message" id="confirmPasswordError"></p>
         </div>
 
         <button class="btn btn-success w-100">Register</button>
+        <p class="pt-3 mb-0">If you are already registered ? <a href="signin.html">Login</a></p>
       </form>
+
     </div>
   </main>
   <!-- Main section ends -->
@@ -116,6 +121,8 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
+  <!-- Common JS -->
+  <script src="js/common.js"></script>
   <!-- Custom JS -->
   <script src="js/signup.js"></script>
 </body>

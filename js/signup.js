@@ -1,40 +1,6 @@
 const signupForm = document.getElementById("signupForm");
-const togglePassword = document.getElementById("togglePassword");
-const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
 
-// For form validation error
-function showError(element, message) {
-  element.textContent = message;
-  element.style.display = "block";
-}
 
-// For form validation error hide
-function hideError(element) {
-  element.style.display = "none";
-}
-
-// Toggle password and confirm password
-
-const toggleVisibility = (inputId, btnId) => {
-  const input = document.getElementById(inputId);
-  const btn = document.getElementById(btnId);
-  const icon = btn.querySelector("i");
-
-  const isHidden = input.type === "password";
-
-  input.type = isHidden ? "text" : "password";
-
-  icon.classList.toggle("fa-eye");
-  icon.classList.toggle("fa-eye-slash");
-};
-
-togglePassword.addEventListener("click", () => {
-  toggleVisibility("password", "togglePassword");
-});
-
-toggleConfirmPassword.addEventListener("click", () => {
-  toggleVisibility("confirmPassword", "toggleConfirmPassword");
-});
 
 // Register Form submission
 signupForm.addEventListener("submit", (e) => {
@@ -136,18 +102,28 @@ signupForm.addEventListener("submit", (e) => {
 
   if (!isValid) return;
 
-  const user = {
-    fullname,
-    email,
-    phoneNumber,
-    city,
-    password,
-    confirmPassword,
-  };
 
-  localStorage.setItem("user", JSON.stringify(user));
+  // For multiple users
+  let users = JSON.parse(localStorage.getItem("users")) || []
+
+
+  //check email already exist
+const isUserExists = users.some(user => user.email === email)
+
+if(isUserExists) {
+  showError(emailError,"User already registered with this email. Please login.")
+  return
+}
+
+const newUser = {fullname,email,phoneNumber,city,password,confirmPassword}
+
+users.push(newUser)
+
+
+  localStorage.setItem("users", JSON.stringify(users));
 
   alert("Successfully registered");
+  
   location.href = "signin.html"
   
 });
